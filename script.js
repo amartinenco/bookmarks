@@ -54,9 +54,7 @@ function buildBookmarks() {
             favUrl : url,
         };
         let itemHtml = templateScript(favContext);
-        bookmarksContainer.innerHTML += itemHtml;
-        console.log(bookmarksContainer.innerHTML);
-
+        bookmarksContainer.insertAdjacentHTML('beforeend', itemHtml);
     });
 }
 
