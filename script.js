@@ -63,10 +63,10 @@ function fetchBookmarks() {
     if (localStorage.getItem('bookmarks')) {
         bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
     } else {
-		const id = `https://github.com/andreim112`
+		const id = `https://github.com/amartinenco`
 		bookmarks[id] = {
 			name: 'GitHub',
-			url: 'https://github.com/andreim112',
+			url: 'https://github.com/amartinenco',
 		}
         localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
     }
